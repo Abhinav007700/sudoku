@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body{
+            background-image: url("img.gif");
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-size: 50% 100%;
+        }
+        div{
+            color: white;
+            background-color: black;
+            height: 250px;
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            font-size: large;
+            position: fixed;
+            top: 30%;
+            left:35%;
+            border-radius: 30px;
+            border: 5px solid aqua;
+        }
+        button{
+            color:white;
+            background-color: black;
+            border: 3px solid aqua;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: aqua;
+        }
+        input{
+            background-color: #333;
+            border: 3px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="/register">Register</a></p>
+    </div>
+</body>
+</html>

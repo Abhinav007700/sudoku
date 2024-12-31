@@ -1,0 +1,77 @@
+body{
+    background-image: url("../static/img.gif");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 50% 100%;
+}
+h1{
+    color:aqua;
+    text-align: center;
+    font-size: 50px;
+}
+table {
+    color: aqua;
+    background-color: black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    /* row-gap: 5px; */
+}
+
+.sudoku-cell {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    /* text-align: center; */
+    color: aqua;
+    background-color: black;
+    border: 1px solid aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sudoku-cell.selected {
+    border-color: rgb(208, 0, 255);
+}
+
+.sudoku-subgrid {
+    border: 5px solid aqua;
+}
+
+/* Add styling for the table rows and cells within subgrids */
+.sudoku-grid tr:nth-child(3n):not(:last-child) {
+    border-bottom: 5px solid aqua;
+}
+
+.sudoku-grid td:nth-child(3n):not(:last-child) {
+    border-right: 5px solid aqua;
+}
+#startScreen {
+text-align: center;
+margin-top: 220px;
+}
+
+#startScreen p {
+font-size: 70px;
+color: aqua;
+animation: blink 1s infinite;
+}
+@keyframes blink {
+0%, 49%, 100% {
+    opacity: 0;
+}
+50% {
+    opacity: 1;
+}
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    color: aqua;
+    background-color: black;
+    border: 1px solid aqua;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
